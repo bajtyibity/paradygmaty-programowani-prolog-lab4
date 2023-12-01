@@ -1,0 +1,7 @@
+[ala, ma, kota] = [kota, ma, ala].                    	%false
+[1,2,3] = [X,Y].					%false
+[1,2,3,osiem] = [1|Ogon].				% Ogon = [2, 3, osiem].
+[1|[2|[3|[osiem]]]] = [1|Ogon].				% Ogon = [2, 3, osiem].
+[[0,1,2],[3,4],[5]] = [Glowa|Ogon].			%Glowa = [0, 1, 2],Ogon = [[3, 4], [5]].
+[ala,ma,kota,a,ola,ma,psa] = [ala,ma,kota,a|X].		%X = [ola, ma, psa].
+[alfa(1,2), alfa(3,4), alfa(5,6)] = [alfa(X,2)|Ogon].	%(X,2)|Ogon].X = 1,Ogon = [alfa(3, 4), alfa(5, 6)].
